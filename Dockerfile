@@ -20,6 +20,6 @@ RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.
 RUN unzip fastqc_v0.11.8.zip; \
     mv /FastQC/ /usr/local/bin/; \
     chmod 755 /usr/local/bin/FastQC/fastqc; \
-    rm fastqc_v0.11.3.zip
+    rm /fastqc_v0.11.8.zip
 
 ENV PATH /usr/local/bin/FastQC/:$PATH
