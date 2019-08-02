@@ -16,8 +16,9 @@ RUN apt-get -y update; \
   rm -rf /var/cache/oracle-jdk8-installer; \
   apt-get clean
 
-RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip; \
-    unzip fastqc_v0.11.8.zip; \
+RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip;
+
+RUN unzip fastqc_v0.11.8.zip; \
     mv /FastQC/ /usr/local/bin/; \
     chmod 755 /usr/local/bin/FastQC/fastqc; \
     rm fastqc_v0.11.3.zip
