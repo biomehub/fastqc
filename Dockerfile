@@ -7,14 +7,16 @@ LABEL software.version="0.11.8"
 LABEL software="FASTQC"
 
 RUN apt-get -y update; \
-    apt-get -y upgrade; \
-    apt-get -y install build-essential
+    apt-get -y upgrade
     
-RUN apt-get -y install wget; \
-    apt-get -y install unzip; \
-    apt install -y perl-modules-5.22
+RUN apt-get install -y build-essential
+    
+RUN apt-get install -y wget; \
+    apt-get install -y unzip
+    
+RUN apt-get install -y perl-modules
 
-RUN apt-get install openjdk-8-jre-headless
+RUN apt-get install -y openjdk-8-jre-headless
 
 RUN apt-get clean
 
