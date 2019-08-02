@@ -8,12 +8,15 @@ LABEL software="FASTQC"
 
 RUN apt-get -y update; \
     apt-get -y upgrade; \
-    apt-get -y install build-essential; \
-    apt-get -y install wget; \
+    apt-get -y install build-essential
+    
+RUN apt-get -y install wget; \
     apt-get -y install unzip; \
-    apt-get install openjdk-8-jre-headless; \
-    apt install -y perl-modules-5.22; \
-    apt-get clean
+    apt install -y perl-modules-5.22
+
+RUN apt-get install openjdk-8-jre-headless
+
+RUN apt-get clean
 
 RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip;
 
