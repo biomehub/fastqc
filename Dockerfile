@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND noninteractive
-MAINTAINER LFelipedeOliveira <felipe@neoprospecta.com>
+MAINTAINER BiomeHub
 
 LABEL version="0.11.8"
 LABEL software.version="0.11.8"
@@ -11,8 +11,8 @@ RUN apt-get -y update; \
     apt-get -y install build-essential; \
     apt-get -y install wget; \
     apt-get -y install unzip; \
-    apt-get install openjdk-8-jre-headless; /
-    apt install -y perl-modules-5.22; /
+    apt-get install openjdk-8-jre-headless; \
+    apt install -y perl-modules-5.22; \
     apt-get clean
 
 RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip;
