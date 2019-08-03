@@ -16,7 +16,7 @@ RUN apt-get install -y wget; \
     
 RUN apt-get install -y perl-modules
 
-RUN apt-get install -y openjdk-8-jre-headless
+RUN apt-get install -y openjdk-8-jre
 
 RUN apt-get clean
 
