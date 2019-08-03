@@ -4,7 +4,7 @@ MAINTAINER BiomeHub
 
 LABEL version="0.11.8"
 LABEL software.version="0.11.8"
-LABEL software="FASTQC"
+LABEL software="FastQC"
 
 RUN apt-get -y update; \
     apt-get -y upgrade
